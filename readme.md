@@ -1,15 +1,14 @@
 ﻿## Mastermind
 
-### Sposób użycia
+Simple application written in NodeJS
 
-Pobranie zależności:
+### Usage
+
+Download dependencies:
 
     npm install
     bower install
 
-Uruchomienie serwera:
+Start the server:
 
     npm start
-
-Definicję stylu należy sporządzić wykorzystując (istotnie!) język LESS.
-Plik źródłowy ze stylem znajduje się w podkatalogu „less”.
