@@ -43,7 +43,6 @@ app.configure('development', function () {
     app.use(express.errorHandler());
 });
 
-// TODO: regexp learn & routes refactor
 app.get('/', routes.index);
 app.get(/^\/play\//, routes.play);
 app.get(/^\/mark\//, routes.mark);
