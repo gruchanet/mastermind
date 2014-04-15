@@ -149,7 +149,7 @@ exports.mark = function (req, res) {
                 } else if (whiteDotRatio > 0) {
                     msg = 'Dajesz radę!'
                 } else if (whiteDotRatio == 0) {
-                    msg = 'Nawet nieźle!'
+                    msg = 'Całkiem nieźle!'
                 }
             } else if (blackDotRatio > 0) {
                 if (whiteDotRatio > 0.5) {
