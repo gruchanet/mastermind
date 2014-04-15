@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/style.css'/>
+    <script src='jquery.min.js'></script>
+    <script src='/js/skrypt.js'></script>
+</head>
+<body>
+<div id="notification" style="display: none;">
+    <div class="inner-box"></div>
+    <button type="button" class="close-btn">×</button>
+</div>
+
+<h2>Mastermind</h2>
+
+<div id="interface">
+    <h4>Interfejs użytkownika</h4>
+    <form id="playForm">
+        <h5>Wypełnij poniższe dane i kliknij przycisk PLAY, aby rozpocząc gre :)</h5>
+        <div>
+            <label for="size-count">Liczba elementów w rzędzie</label>
+            <input id="size-count" name="size" type="number" min="1" max="<%= maxSize %>" value="<%= defaultSize %>">
+        </div>
+        <div>
+            <label for="color-count">Liczba kolorów</label>
+            <input id="color-count" name="color" type="number" min="2" max="<%= maxColors %>" value="<%= defaultColors %>">
+        </div>
+        <div>
+            <label for="move-count">Liczba ruchów (0 - brak ograniczeń)</label>
+            <input id="move-count" name="move" type="number" min="0" max="<%= maxMoves %>" value="<%= defaultMoves %>">
+        </div>
+
+        <button type="submit">PLAY</button>
+    </form>
+</div>
+</body>
+</html>

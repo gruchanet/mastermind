@@ -1,0 +1,10 @@
+# Ignore .idea files
+/.idea/*
+
+# Ignore temporary files
+*~
+~*
+
+# Ignore node_modules & bower_components
+/node_modules/*
+/bower_components/*
