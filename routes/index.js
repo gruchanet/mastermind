@@ -77,9 +77,11 @@ exports.mark = function (req, res) {
 
         // reduce moves left
         if (gameState.movesLeft > 0) {
-            gameState.currentMove += 1;
             gameState.movesLeft -= 1;
         }
+
+        // set current move
+        gameState.currentMove += 1;
 
         var
             blackDots = 0,
